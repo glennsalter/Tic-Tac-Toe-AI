@@ -1,0 +1,55 @@
+body {
+    font-family: "Helvetica, Arial, sans-serif",serif;
+    background-color: lavender;
+}
+h1, h2, h3, p {text-align: center}
+h1 {font-size: 5vw}
+p {font-size: 2.5vw}
+.row_container {
+    display:flex;
+    justify-content: center;
+}
+.box {
+    border: 1px solid black;
+    padding: 14px;
+    margin: 8px;
+    width: 8vw;
+    height: 8vw;
+    text-align: center;
+    border-radius: 10px;
+}
+.box:hover {
+    background-color: lightskyblue;
+}
+#_11, #_12, #_21, #_22, #_31, #_32 {
+    font-size: 5vw;
+    float: left;
+}
+#_13, #_23, #_33 {
+    font-size: 5vw;
+    clear:right;
+}
+button {
+    color: snow;
+    font-size: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border: none;
+    background-color: lightgrey;
+    border-radius: 9px;
+}
+button:hover {
+    background-color: dodgerblue;
+}
+
+.mini {
+    width: 15%;
+    height: 8vw;
+}
+
+.large {
+    width: 30%;
+    height: 8vw;
+}
