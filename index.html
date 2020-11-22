@@ -1,1 +1,44 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+<h1>Tic Tac Toe</h1>
+
+
+<h2>Pick ❌ to go first, pick ⭕ to go second.</h2>
+<div class="row_container">
+    <button class="mini" id="second" onclick="firstMove(this)">❌</button>
+    <button class="mini" id="first" onclick="firstMove(this)">⭕</button>
+</div>
+
+<div class="row_container">
+    <div class="box" id="_11" onclick="makeMove(this)" > </div>
+    <div class="box" id="_12" onclick="makeMove(this)" > </div>
+    <div class="box" id="_13" onclick="makeMove(this)" > </div>
+</div>
+<div class="row_container">
+
+    <div class="box" id="_21" onclick="makeMove(this)" > </div>
+    <div class="box" id="_22" onclick="makeMove(this)" > </div>
+    <div class="box" id="_23" onclick="makeMove(this)" > </div>
+
+</div>
+<div class="row_container">
+    <div class="box" id="_31" onclick="makeMove(this)" > </div>
+    <div class="box" id="_32" onclick="makeMove(this)" > </div>
+    <div class="box" id="_33" onclick="makeMove(this)" > </div>
+</div>
+
+<div class="row_container">
+    <button class="large" onclick="resetBoard()">Reset</button>
+</div>
+
+</body>
+</html>
+
