@@ -1,22 +1,47 @@
 body {
-    font-family: "Helvetica, Arial, sans-serif",serif;
-    background-color: lavender;
+    font-family: "Helvetica, Arial, sans-serif";
 }
-h1, h2, h3, p {text-align: center}
+h1, h2 {text-align: center}
 h1 {font-size: 5vw}
 p {font-size: 2.5vw}
+
 .row_container {
     display:flex;
     justify-content: center;
 }
+.board_container {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+.text_container {
+    width: 40%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+}
+.text_container h2 {
+    text-align: left;
+}
 .box {
+    border-radius: 5px;
+    background-color: white;
     border: 1px solid black;
     padding: 14px;
-    margin: 8px;
+    margin: 2px;
     width: 8vw;
     height: 8vw;
     text-align: center;
-    border-radius: 10px;
+
 }
 .box:hover {
     background-color: lightskyblue;
@@ -44,6 +69,7 @@ button:hover {
     background-color: dodgerblue;
 }
 
+
 .mini {
     width: 15%;
     height: 8vw;
@@ -52,4 +78,15 @@ button:hover {
 .large {
     width: 30%;
     height: 8vw;
+}
+
+input[type='text'] {
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-bottom: 2vw;
+    width: 40%;
+    min-width: 180px;
+    height: 26px;
 }
