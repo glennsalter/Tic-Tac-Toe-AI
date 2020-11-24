@@ -128,7 +128,7 @@ function firstMove(obj) {
         }
         if (obj.innerHTML === "❌") {
             firstPlayer = 0;
-            displayMessage("You chose ❌, go first. AI is waiting...","",2000)
+            displayMessage("You chose ❌, go first. AI is waiting...","Your Move...",2000)
         }
         isFirst = false;
     }
