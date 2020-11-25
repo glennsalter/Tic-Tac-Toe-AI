@@ -8,45 +8,50 @@
     <script src="main.js"></script>
 </head>
 <body>
-
-<h1>Tic Tac Toe</h1>
-<h2>Can You Beat the AI?</h2>
-<div class="text_container">
-    <h2>Rules: </h2>
-    <p>Pick ❌ to go first, pick ⭕ to go second.</p>
-    <p>First player to get 3 in a row wins.</p>
-</div>
-
-<div class="row_container">
-    <button class="mini" id="second" onclick="firstMove(this)">❌</button>
-    <button class="mini" id="first" onclick="firstMove(this)">⭕</button>
-</div>
-
-<div class=row_container>
-    <input id="console" type="text" value="Pick ❌ or ⭕" readonly>
-</div>
-<div class="board_container">
-    <div class="row_container">
-        <div class="box" id="_11" onclick="makeMove(this)" > </div>
-        <div class="box" id="_12" onclick="makeMove(this)" > </div>
-        <div class="box" id="_13" onclick="makeMove(this)" > </div>
+<div class="main_content">
+    <div class="header">
+        <h1>Tic Tac Toe</h1>
     </div>
-    <div class="row_container">
-
-        <div class="box" id="_21" onclick="makeMove(this)" > </div>
-        <div class="box" id="_22" onclick="makeMove(this)" > </div>
-        <div class="box" id="_23" onclick="makeMove(this)" > </div>
-
+    <h2>Can You Beat the AI?</h2>
+    <div class="sub_content">
+        <div class="text_container">
+            <p>Rules: </p>
+            <p>Pick ❌ to go first, pick ⭕ to go second.</p>
+            <p>First player to get 3 in a row wins.</p>
+        </div>
+        <div class="row_container">
+            <button class="mini" id="second" onclick="firstMove(this)">❌</button>
+            <button class="mini" id="first" onclick="firstMove(this)">⭕</button>
+        </div>
+        <div class=row_container>
+            <input id="console" type="text" value="Pick ❌ or ⭕" readonly>
+        </div>
+        <div class="board_container">
+            <div class="row_container">
+                <div class="box" id="_11" onclick="makeMove(this)" > </div>
+                <div class="box" id="_12" onclick="makeMove(this)" > </div>
+                <div class="box" id="_13" onclick="makeMove(this)" > </div>
+            </div>
+            <div class="row_container">
+                <div class="box" id="_21" onclick="makeMove(this)" > </div>
+                <div class="box" id="_22" onclick="makeMove(this)" > </div>
+                <div class="box" id="_23" onclick="makeMove(this)" > </div>
+            </div>
+            <div class="row_container">
+                <div class="box" id="_31" onclick="makeMove(this)" > </div>
+                <div class="box" id="_32" onclick="makeMove(this)" > </div>
+                <div class="box" id="_33" onclick="makeMove(this)" > </div>
+            </div>
+        </div>
+        <div class="row_container">
+            <button class="large" onclick="resetBoard()">Reset</button>
+        </div>
     </div>
-    <div class="row_container">
-        <div class="box" id="_31" onclick="makeMove(this)" > </div>
-        <div class="box" id="_32" onclick="makeMove(this)" > </div>
-        <div class="box" id="_33" onclick="makeMove(this)" > </div>
+    <div class="footer">
+        <p>Reference: </p>
+        <p>https://www.geeksforgeeks.org</p>
+        <p></p>
     </div>
 </div>
-<div class="row_container">
-    <button class="large" onclick="resetBoard()">Reset</button>
-</div>
-
 </body>
 </html>

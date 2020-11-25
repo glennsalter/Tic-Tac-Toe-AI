@@ -1,92 +1,24 @@
-body {
-    font-family: "Helvetica, Arial, sans-serif";
-}
+body {font-family: "Helvetica, Arial, sans-serif";}
 h1, h2 {text-align: center}
-h1 {font-size: 5vw}
-p {font-size: 2.5vw}
-
-.row_container {
-    display:flex;
-    justify-content: center;
-}
-.board_container {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 5px;
-    background-color: darkgrey;
-    border-radius: 10px;
-}
-.text_container {
-    width: 40%;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 2px solid lightgray;
-}
-.text_container h2 {
-    text-align: left;
-}
-.box {
-    border-radius: 5px;
-    background-color: white;
-    border: 1px solid black;
-    padding: 14px;
-    margin: 2px;
-    width: 8vw;
-    height: 8vw;
-    text-align: center;
-
-}
-.box:hover {
-    background-color: lightskyblue;
-}
-#_11, #_12, #_21, #_22, #_31, #_32 {
-    font-size: 5vw;
-    float: left;
-}
-#_13, #_23, #_33 {
-    font-size: 5vw;
-    clear:right;
-}
-button {
-    color: snow;
-    font-size: 5vw;
-    margin-top: 2vw;
-    margin-bottom: 5vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    border: none;
-    background-color: lightgrey;
-    border-radius: 9px;
-}
-button:hover {
-    background-color: dodgerblue;
-}
-
-
-.mini {
-    width: 15%;
-    height: 8vw;
-}
-
-.large {
-    width: 30%;
-    height: 8vw;
-}
-
-input[type='text'] {
-    border: 2px solid grey;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-left: 5px;
-    margin-bottom: 2vw;
-    width: 40%;
-    min-width: 180px;
-    height: 26px;
-}
+h1 {font-size: 4vw;}
+h2 {margin-left: auto;margin-right: auto;font-size: 2.5vw;}
+p {font-size: 2vw}
+.header {padding: 10px;margin-left: auto;margin-right: auto;border-bottom: 7px solid red;background-color: lightgray;}
+.footer {padding: 10px;margin-left: auto;margin-right: auto;border-top: 7px solid red;background-color: lightgray;}
+.footer p:first-child {font-weight: bold;}
+.main_content {margin-top: 0px;margin-left: auto;margin-right: auto;background-color: #f1f1f1;max-width: 1000px;}
+.sub_content {margin-left: auto;margin-right: auto;width: 45%;}
+.row_container {display:flex;justify-content: center;}
+.board_container {width: fit-content;margin-left: auto;margin-right: auto;margin-top: 10px;margin-bottom: 10px;padding: 5px;background-color: darkgrey;border-radius: 10px;}
+.text_container {background-color: white;padding: 10px;margin-left: auto;margin-right: auto;margin-top: 10px;margin-bottom: 10px;border-radius: 10px;border: 2px solid lightgray;}
+.text_container p:first-child {font-weight: bold;}
+.text_container h2 {text-align: left;}
+.box {border-radius: 5px;background-color: white;border: 1px solid black;padding: 14px;margin: 2px;width: 8vw;height: 8vw;text-align: center;}
+.box:hover {background-color: lightskyblue;}
+#_11, #_12, #_21, #_22, #_31, #_32 {font-size: 5vw;float: left;}
+#_13, #_23, #_33 {font-size: 5vw;clear:right;}
+button {color: snow;font-size: 5vw;margin-top: 2vw;margin-bottom: 5vw;margin-left: 5vw;margin-right: 5vw;border: none;background-color: lightgrey;border-radius: 9px;}
+button:hover {background-color: dodgerblue;}
+.mini {width: 8vw;height: 8vw;}
+.large {width: 16vw;height: 8vw;}
+input[type='text'] {border: 2px solid grey;border-radius: 5px;font-size: 18px;margin-left: 5px;margin-bottom: 2vw;min-width: 180px;height: 26px;}
